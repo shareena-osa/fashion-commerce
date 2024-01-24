@@ -10,7 +10,7 @@ const products = [
   },
   {
     id: 2,
-    image: "images/shareena123.jpg",
+    image: "images/sha001.jpg",
     title: "Lehenga Choli - Orange",
     price: "Rs. 2,199",
     arrivalDate: "2023-08-15",
@@ -28,7 +28,7 @@ const products = [
   },
   {
     id: 4,
-    image: "images/potti-01.jpg",
+    image: "images/color5.jpeg",
     title: "Lehenga Choli - Blue",
     price: "Rs. 2,399",
     arrivalDate: "2023-09-15",
@@ -37,7 +37,7 @@ const products = [
   },
   {
     id: 5,
-    image: "images/sha002.jpg",
+    image: "images/sha001.jpg",
     title: "Lehenga Choli - Pink",
     price: "Rs. 1,999",
     arrivalDate: "2023-01-15",

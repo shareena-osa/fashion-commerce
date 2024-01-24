@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
-import WishlistPage from "./pages/WishlistPage";
-import CartPage from "./pages/CartPage";
+import Wishlist from "./pages/Wishlist";
+import Cart from "./pages/Cart";
 import ProductPage from "./pages/ProductPage";
 
 function App() {
@@ -15,8 +15,8 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route path="/wishlist" element={<WishlistPage />} />
-            <Route path="/cart" element={<CartPage />} />
+            <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="/products" element={<ProductPage />} />
           </Routes>
         </main>
