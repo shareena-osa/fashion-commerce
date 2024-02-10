@@ -2,10 +2,9 @@ import React from "react";
 
 function Banner() {
   return (
-    // Added gradient background to the outer div
-    <div className="flex w-full bg-gradient-to-r from-pink-100 to-blue-100 py-16">
+    <div className="flex w-full bg-gradient-to-r from-pink-100 to-blue-100 py-16 max-h-full	 " >
       {/* Left Section */}
-      <div className="flex flex-col justify-center items-start p-30 pl-64 w-1/2">
+      <div className="flex flex-col justify-center items-start p-40 pl-64 w-1/2">
         <div className="text-gray-800 text-2xl mb-2 tracking-wide ">
           Shareena Unique Collections
         </div>

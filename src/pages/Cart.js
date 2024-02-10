@@ -1,7 +1,7 @@
-/*import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
-import { removeItemFromtheCart, getCartItems } from "../services/cartService";
+import { removeFromCart as removeFromCartService, getCart as getCartItems } from "../services/cartService";
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -11,11 +11,10 @@ const Cart = () => {
     setCartItems(items);
   }, []);
 
-  const removeFromCart = (productId) => {
-    // const updatedCartItems = cartItems.filter((item) => item.id !== productId);
-    // setCartItems(updatedCartItems);
-    // localStorage.setItem("cart", JSON.stringify(updatedCartItems));
-    removeItemFromtheCart(productId);
+  const handleRemoveFromCart = (productId) => {
+    removeFromCartService(productId);
+    const updatedCartItems = getCartItems();
+    setCartItems(updatedCartItems);
   };
 
   const totalPrice = cartItems.reduce(
@@ -43,7 +42,7 @@ const Cart = () => {
               <p>Price: {item.price}</p>
             </div>
             <button
-              onClick={() => removeFromCart(item.id)}
+              onClick={() => handleRemoveFromCart(item.id)}
               className="remove-item-btn mx-auto"
             >
               <FontAwesomeIcon icon={faTrashAlt} />
@@ -63,4 +62,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;*/
+export default Cart;

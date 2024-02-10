@@ -13,8 +13,7 @@ function ProductPage() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 900,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    cssEase: "linear",
   };
 
   return (
@@ -55,49 +54,7 @@ function ProductPage() {
     </div>
   );
 }
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={`${className}`}
-      style={{
-        ...style,
-        display: "block",
-        width: "40px",
-        height: "40px",
-        zIndex: 2,
-        right: "10px",
-        top: "38%",
-      }}
-      onClick={onClick}
-    >
-      <img src="/path-to-right-arrow-icon.svg" alt="Next" />{" "}
-      {/* Replace with your right arrow icon */}
-    </div>
-  );
-}
 
-// Custom Prev Arrow
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={`${className}`}
-      style={{
-        ...style,
-        display: "block",
-        width: "40px",
-        height: "40px",
-        zIndex: 2,
-        left: "10px",
-        top: "38%",
-      }}
-      onClick={onClick}
-    >
-      <img src="/path-to-left-arrow-icon.svg" alt="Prev" />{" "}
-      {/* Replace with your left arrow icon */}
-    </div>
-  );
-}
+
 
 export default ProductPage;
