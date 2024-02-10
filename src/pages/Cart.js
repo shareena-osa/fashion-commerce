@@ -18,14 +18,14 @@ const Cart = () => {
   };
 
   const totalPrice = cartItems.reduce(
-    (total, item) => total + parseFloat(item.price.replace(/[^0-9.-]+/g, "")),
+    (total, item) => total + parseFloat(item.price.replace("Rs. ", "" )),
     0
   );
 
   return (
-    <div className="box-decoration-clone bg-gradient-to-r from-indigo-100 to-pink-100 text-center animate-slide-in-left">
-      <h2 className="mt-0 font-bold text-3xl p-5">Your Shopping Cart</h2>
-      <div className="cart-box mx-auto p-4 shadow-lg">
+    <div className="box-decoration-clone bg-gradient-to-r from-indigo-100 to-pink-100 text-center animate-slide-in-left min-h-screen">
+      <h2 className="mt-0 pt-16 font-bold text-4xl p-15">Your Shopping Cart</h2>
+      <div className="cart-box mx-auto p-4 shadow-lg min-h-screen">
         {cartItems.length === 0 && <p>No items in the cart.</p>}
         {cartItems.map((item) => (
           <div
@@ -35,7 +35,7 @@ const Cart = () => {
             <img
               src={item.image}
               alt={item.title}
-              className="h-80 w-60 object-cover mx-auto"
+              className="h-80 w-60 object-cover mx-auto pd-4"
             />
             <div className="cart-item-details text-1xl mt-2 mx-auto">
               <h4>{item.title}</h4>
@@ -50,7 +50,7 @@ const Cart = () => {
           </div>
         ))}
         <div className="total-price text-2xl my-2">
-          <h3>Total Price: Rs. {totalPrice.toFixed(2)}</h3>
+          <h3>Total Price: Rs. {totalPrice.toFixed(3)}</h3>
         </div>
         {cartItems.length > 0 && (
           <button className="rounded-md p-4 bg-blue-300 hover:bg-blue-500 cursor-pointer tracking-widest flex justify-center items-center mx-auto my-2">

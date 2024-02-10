@@ -81,9 +81,9 @@ function Login({ isOpen, onClose }) {
             />
           </div>
           <div className="text-center mb-4">
-            <a href="#" className="text-sm text-blue-500 hover:text-blue-700">
+            <div href="#" className="text-sm text-blue-500 hover:text-blue-700">
               Forgot Password?
-            </a>
+            </div>
           </div>
           <div className="flex items-center justify-center">
             <button

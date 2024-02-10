@@ -43,25 +43,25 @@ function Menubar() {
         {/* Sidebar content */}
         <ul className="flex flex-col p-6 space-y-4 ">
           <li className="hover:scale-90 p-4  hover:text-blue-700">
-            <a href="#">Women</a>
+            <div href="#">Women</div>
           </li>
           <li className="hover:scale-90 p-4  hover:text-blue-700">
-            <a href="#">Men</a>
+            <div href="#">Men</div>
           </li>
           <li className="hover:scale-90 p-4  hover:text-blue-700">
-            <a href="#">Kids</a>
+            <div href="#">Kids</div>
           </li>
           <li className="hover:scale-90 p-4  hover:text-blue-700">
-            <a href="#">Accessories</a>
+            <div href="#">Accessories</div>
           </li>
           <li className="hover:scale-90 p-4  hover:text-blue-700">
-            <a href="#">Beauty</a>
+            <div href="#">Beauty</div>
           </li>
           <li className="hover:scale-90 p-4  hover:text-blue-700">
-            <a href="#">Shoes</a>
+            <div href="#">Shoes</div>
           </li>
           <li className="hover:scale-90 p-4  hover:text-blue-700">
-            <a href="#">Jewellery</a>
+            <div href="#">Jewellery</div>
           </li>
         </ul>
       </div>
