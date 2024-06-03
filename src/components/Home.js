@@ -1,4 +1,6 @@
+import AllTimeFav from "./AllTimeFav";
 import Banner from "./Banner";
+import Forus from "./Forus";
 import TrendingProducts from "./TrendingProducts";
 
 function Home() {
@@ -6,6 +8,8 @@ function Home() {
     <div>
       <Banner />
       <TrendingProducts />
+      <AllTimeFav />
+      <Forus />
     </div>
   );
 }

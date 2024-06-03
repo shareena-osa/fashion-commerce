@@ -1,42 +1,23 @@
 import React from "react";
-import { useSpring, animated } from "react-spring";
+import "./Banner.css";
 
 function Banner() {
-  const textAnimation = useSpring({
-    opacity: 1,
-    transform: "translateY(0)",
-    from: { opacity: 0, transform: "translateY(-20px)" },
-    config: { duration: 500 },
-  });
-
   return (
-    <div className="flex w-full bg-gradient-to-r from-pink-100 to-blue-100 py-16 h-screen">
-      {/* Left Section */}
-      <div className="flex flex-col justify-center items-start p-40 pl-64 w-1/2">
-        <animated.div
-          className="text-gray-800 text-3xl pb-4 mb-2 tracking-wide"
-          style={textAnimation}
-        >
+    <div
+      className="flex w-full h-screen bg-cover bg-center bg-no-repeat "
+      style={{ backgroundImage: "url('/images/shareena123.jpg')" }}
+    >
+      <div className="absolute  bg-black bg-opacity-50"></div>
+      <div className="flex flex-col justify-center p-40 w-1/2 ml-auto backdrop-blur-5 animate-fade-in">
+        <h1 className="text-white text-6xl mb-4 custom-font">
           Shareena Unique Collections
-        </animated.div>
-        <animated.div
-          className="text-gray-900 text-5xl pb-4 font-bold mb-3 tracking-wider"
-          style={textAnimation}
-        >
+        </h1>
+        <h1 className="text-white text-5xl pb-4 font-bold mb-3 tracking-wider animate-slide-in-left">
           New Arrivals
-        </animated.div>
-        <button className="bg-blue-300 text-white px-6 py-2 rounded hover:bg-purple-500 tracking-wide">
+        </h1>
+        <button className="bg-blue-300 text-white px-6 py-2 rounded hover:bg-purple-500 tracking-wide animate-bounce">
           Shop Now
         </button>
-      </div>
-
-      {/* Right Section */}
-      <div className="flex justify-center">
-        <img
-          src="/images/White2.png"
-          alt="Banner"
-          className="h-full object-cover"
-        />
       </div>
     </div>
   );

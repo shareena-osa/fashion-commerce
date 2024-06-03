@@ -20,7 +20,7 @@ function Header() {
   };
 
   return (
-    <div className="bg-slate-50 shadow-md text-black bg-gradient-to-l from-slate-200 via-blue-100 to-slate-50">
+    <div className="sticky top-0 z-50 bg-slate-50 shadow-md text-black bg-gradient-to-l from-slate-200 via-blue-100 to-slate-50 ">
       <div className="flex p-4 items-center justify-between tracking-widest">
         <div className="flex-none">
           <Menubar />

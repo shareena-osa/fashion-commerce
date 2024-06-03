@@ -33,7 +33,7 @@ const sareeProducts = [
   },
   {
     id: 15,
-    image: "/images/bhabhi02.JPG",
+    image: "/images/shetty1.jpg",
     title: "Gorgeous Saree",
     price: "Rs. 2500",
     rating: 5,
